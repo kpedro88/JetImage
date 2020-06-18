@@ -1,0 +1,7 @@
+<use name="DataFormats/Math"/>
+<use name="DataFormats/JetReco"/>
+<use name="DataFormats/Candidate"/>
+<use name="DataFormats/PatCandidates"/>
+<use name="HeterogeneousCore/SonicCore"/>
+<use name="HeterogeneousCore/SonicTriton"/>
+<flags EDM_PLUGIN="1"/>
