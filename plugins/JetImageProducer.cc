@@ -125,7 +125,7 @@ class JetImageProducer : public SonicEDProducer<Client>
 				}
 				//get top n
 				std::stringstream msg;
-				msg << "Scores:\n";
+				msg << "Scores for jet " << i0 << ":\n";
 				unsigned counter = 0;
 				for(const auto& item: score_map){
 					msg << item.second << " : " << item.first << "\n";

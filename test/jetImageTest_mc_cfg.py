@@ -70,6 +70,7 @@ process.jetImageProducer = cms.EDProducer(allowed_modes[options.mode],
         modelName = cms.string(options.modelName),
         modelVersion = cms.int32(-1),
         verbose = cms.bool(options.verbose),
+        allowedTries = cms.uint32(0),
     )
 )
 
