@@ -63,14 +63,14 @@ process.jetImageProducer = cms.EDProducer(allowed_modes[options.mode],
     Client = cms.PSet(
         nInput  = cms.uint32(_npix*_npix*_ncol),
         nOutput = cms.uint32(1000),
-        batchSize = cms.uint32(options.batchSize),
-        address = cms.string(options.address),
-        port = cms.uint32(options.port),
-        timeout = cms.uint32(options.timeout),
+        batchSize = cms.untracked.uint32(options.batchSize),
+        address = cms.untracked.string(options.address),
+        port = cms.untracked.uint32(options.port),
+        timeout = cms.untracked.uint32(options.timeout),
         modelName = cms.string(options.modelName),
         modelVersion = cms.int32(-1),
-        verbose = cms.bool(options.verbose),
-        allowedTries = cms.uint32(0),
+        verbose = cms.untracked.bool(options.verbose),
+        allowedTries = cms.untracked.uint32(0),
     )
 )
 
